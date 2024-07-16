@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/languageFragment">
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.nextour_newnexnavi.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" >
+        <action
+            android:id="@+id/action_languageFragment_to_courseListFragment"
+            app:destination="@id/courseListFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@+id/languageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseListFragment"
+        android:name="com.nextour_newnexnavi.CourseListFragment"
+        android:label="fragment_course_list"
+        tools:layout="@layout/fragment_course_list" >
+        <action
+            android:id="@+id/action_courseListFragment_to_introductionFragment"
+            app:destination="@id/introductionFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@+id/courseListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/introductionFragment"
+        android:name="com.nextour_newnexnavi.IntroductionFragment"
+        android:label="fragment_introduction"
+        tools:layout="@layout/fragment_introduction" >
+        <action
+            android:id="@+id/action_introductionFragment_to_placeListFragment"
+            app:destination="@id/placeListFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@+id/introductionFragment" />
+        <argument
+            android:name="routeID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/placeListFragment"
+        android:name="com.nextour_newnexnavi.PlaceListFragment"
+        android:label="fragment_place_list"
+        tools:layout="@layout/fragment_place_list" >
+        <action
+            android:id="@+id/action_placeListFragment_to_guideFragment"
+            app:destination="@id/guideFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@+id/placeListFragment" />
+        <argument
+            android:name="routeID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/guideFragment"
+        android:name="com.nextour_newnexnavi.GuideFragment"
+        android:label="fragment_guide"
+        tools:layout="@layout/fragment_guide" >
+        <action
+            android:id="@+id/action_guideFragment_to_contentFragment"
+            app:destination="@id/contentFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@+id/guideFragment" />
+        <argument
+            android:name="reverse"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="routename"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/contentFragment"
+        android:name="com.nextour_newnexnavi.ContentFragment"
+        android:label="fragment_content"
+        tools:layout="@layout/fragment_content" >
+        <argument
+            android:name="spotID"
+            app:argType="string" />
+    </fragment>
+</navigation>

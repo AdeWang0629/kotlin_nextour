@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dbURL">https://nexnavi-a7893-newdb.firebaseio.com/</string>
+    <string name="strageURL">gs://nexnavi-a7893-newdb</string>
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "526802576901",
+    "firebase_url": "https://nexnavi-a7893.firebaseio.com",
+    "project_id": "nexnavi-a7893",
+    "storage_bucket": "nexnavi-a7893.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526802576901:android:ebf9bb6989d7e23b425e6c",
+        "android_client_info": {
+          "package_name": "com.nextour_newnexnavi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526802576901-kc0asc0t11kn7aoa10cal7f580q2heci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZOxBQYZOoRSpXvFgzA-b0i3xgtDyedMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526802576901-kc0asc0t11kn7aoa10cal7f580q2heci.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "526802576901-umgg2ceh5fu1a3gv9u9puhpld7tvp4jd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nextour"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

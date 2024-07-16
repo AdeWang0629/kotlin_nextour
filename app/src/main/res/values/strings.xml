@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">nexnavi</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lang_nextbutton_title">OK</string>
+    <string name="word_msg_downloading">画像や音声データをダウンロード中です。\nもう少しお待ち下さい。</string>
+    <string name="advice_message">位置情報が許可されていません。\n位置情報を許可しないと正確な案内ができません。</string>
+    <string name="word_predict_time">予想所要時間：およそあと%d分</string>
+    <string name="word_required_time">予想所要時間：およそ%d分</string>
+    <string name="word_select_direction">進行方向を選んでください</string>
+    <string name="word_normal_direction">↓（順方向）</string>
+    <string name="word_reverse_direction">↑（逆方向）</string>
+    <string name="word_cancel">キャンセル</string>
+    <string name="word_msg_change_manual">次の到着時刻の予測が難しいので手動モードに切り替えます。</string>
+    <string name="word_msg_change_gps">次の到着時刻の予測が難しいのでGPSモードに切り替えます。</string>
+    <string name="word_notification_timer_arrival">目的地到着予定通知</string>
+    <string name="word_msg_gps_timer_arrival">%s に到着している可能性があります。</string>
+    <string name="word_msg_timer_arrival">%s に到着予定の時刻です。</string>
+    <string name="word_msg_autoplay">GPSモードでのタイマーによる案内を自動再生しますか？（以後同じ）</string>
+    <string name="word_autoplay">自動再生する</string>
+    <string name="word_manualplay">再生しない（手動）</string>
+    <string name="word_msg_arraival">最終目的地に到着しました。\nお疲れ様でした。</string>
+    <string name="word_msg_gps_arrival">%s 付近に到着しました。</string>
+    <string name="language_setting">Language setting</string>
+    <!--    &lt;!&ndash; Preference専用&ndash;&gt;-->
+<!--    <string name="mylanguage">mylanguage</string>&lt;!&ndash; 選択言語&ndash;&gt;-->
+<!--    <string name="naviMode">naviMode</string>&lt;!&ndash; GPS, Timer, Manual:navimodeType参照&ndash;&gt;-->
+<!--    <string name="timerInfo">timerInfo</string>&lt;!&ndash; Timer案内をしたかどうか。1度きりのbool&ndash;&gt;-->
+<!--    <string name="gpsInfo">gpsInfo</string>&lt;!&ndash; GPS案内をしたかどうか。１度きり。bool&ndash;&gt;-->
+<!--    <string name="allowNotify">allowNotify</string>&lt;!&ndash; ローカル通知の可否:bool&ndash;&gt;-->
+<!--    <string name="allowTimerPlay">allowTimerPlay</string>&lt;!&ndash; GPSモード時の初回タイマー通知時アクション設定:int:"false"=false, "true"=true, null=none&ndash;&gt;-->
+<!--    <string name="timeralarmSet">timeralarmSet</string>!&#45;&#45; タイマーアラームが設定されている:bool&ndash;&gt;-->
+<!--    <string name="gpsalarmSet">timeralarmSet</string>!&#45;&#45; GPSアラームが設定されている:bool&ndash;&gt;-->
+<!--    <string name="voiceOn">voiceOn</string>-->
+</resources>

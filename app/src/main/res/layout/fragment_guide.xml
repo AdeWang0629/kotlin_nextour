@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/guideBlue"
+    tools:context=".IntroductionFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="guide"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="10sp"
+        android:autoSizeMaxTextSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/larrow"
+        app:layout_constraintBottom_toBottomOf="@+id/title"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toTopOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/gpsbutton"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/lightGray"
+        android:tag="0"
+        android:text="GPS"
+        app:layout_constraintEnd_toStartOf="@+id/timerbutton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Button
+        android:id="@+id/timerbutton"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/lightGray"
+        android:tag="1"
+        android:text="Timer"
+        app:layout_constraintEnd_toStartOf="@+id/manualbutton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/gpsbutton"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Button
+        android:id="@+id/manualbutton"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/lightGray"
+        android:tag="2"
+        android:text="Manual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/timerbutton"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timerbutton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
